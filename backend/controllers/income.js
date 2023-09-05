@@ -22,7 +22,7 @@ exports.addIncome = async (req, res) => {
         .json({ message: "Amount must be a positive number!" });
     }
     await income.save();
-    res.status(200).json({ message: "Income Added" });
+    res.status(200).json({ message: "Income has been Added" });
   } catch (error) {}
 
   console.log(income);
